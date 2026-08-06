@@ -3,7 +3,7 @@ import pandas as pd
 
 
 #loading the data
-df = pd.read_csv("data/train-test.csv")
+df = pd.read_csv("train-test.csv")
 print("=" * 100)
 print("Dataset overview")
 print("=" * 100)
