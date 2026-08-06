@@ -8,7 +8,7 @@ OUTPUT_PATH = "december_chart_inputs.csv"
 
 
 # Load data and model
-df = pd.read_csv("data/train-test.csv")
+df = pd.read_csv("train-test.csv")
 df["date"] = pd.to_datetime(df["date"])
 
 model = CatBoostRegressor()
