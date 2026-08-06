@@ -26,13 +26,10 @@ python src/Training_program.py
 
 This trains the initial CatBoost model and evaluates it on the October validation period.
 
-3. Train the final model
-python src/final_training.py
+3. Train the final model and generate validation predictions
+python src/Final_training.py
 
 The final model is trained on the available labeled data and saved for prediction.
-
-4. Generate validation predictions
-python src/december_predictions.py
 
 This generates predictions for the 12,000 loads in data/validation.csv.
 
@@ -44,8 +41,8 @@ It contains:
 
 load_id,predicted_rate
 
-5. Generate December predictions
-python src/december_predictions.py
+4. Generate December predictions
+python src/december_training.py
 
 This uses the trained final model to generate predictions for the fixed December 2025 scenario.
 
