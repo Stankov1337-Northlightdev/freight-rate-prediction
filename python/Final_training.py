@@ -7,8 +7,8 @@ from catboost import CatBoostRegressor
 
 # Load data
 
-train_df = pd.read_csv("data/train-test.csv")
-validation_df = pd.read_csv("data/train-test.csv")
+train_df = pd.read_csv("train-test.csv")
+validation_df = pd.read_csv("validation.csv")
 
 print("=" * 70)
 print("FINAL MODEL TRAINING")
