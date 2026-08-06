@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # Load data
 
-df = pd.read_csv("data/train-test.csv")
+df = pd.read_csv("train-test.csv")
 df["date"] = pd.to_datetime(df["date"])
 
 # Data cleaning  //here instead of deleting the rows entirely we are replacing them with missing values
